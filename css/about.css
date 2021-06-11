@@ -1,0 +1,44 @@
+/* This File Is Linked To About Page */
+.container {
+  margin: 30px auto;
+  background: #fff5;
+  text-align: center; }
+  .container .a-image {
+    width: 100%; }
+    .container .a-image img {
+      margin: auto;
+      padding: 5px;
+      border-radius: 10px;
+      border: 1px solid #000;
+      width: 200px; }
+  .container .a-name {
+    font-size: 25px; }
+  .container .a-desc {
+    font-size: 22px; }
+  .container .a-contact {
+    font-size: 20px; }
+    .container .a-contact .contact {
+      width: 130px;
+      display: inline-block; }
+      .container .a-contact .contact img {
+        width: 40px;
+        transition: width 0.2s, height 0.2s; }
+    .container .a-contact .contact:hover img {
+      width: 43px; }
+
+/* For Bigger Screens */
+@media screen and (min-width: 800px) {
+  .container {
+    display: grid;
+    grid: 'image desc desc' 'con con con'; }
+    .container .a-image {
+      width: 200px;
+      grid-area: image; }
+      .container .a-image img {
+        width: 100%; }
+    .container .a-desc {
+      grid-area: desc; }
+    .container .a-contact {
+      grid-area: con; } }
+
+/*# sourceMappingURL=about.css.map */

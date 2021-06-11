@@ -1,0 +1,74 @@
+/* This File Is Linked To Settings Page */
+.toggle-bar {
+  background: #0009;
+  display: flex;
+  flex-basis: 15px;
+  justify-content: center; }
+  .toggle-bar .item {
+    background: #fff5;
+    padding: 5px;
+    border-radius: 10px;
+    transition: background 0.2s, color 0.2s;
+    cursor: pointer; }
+    .toggle-bar .item img {
+      width: 40px;
+      height: 40px; }
+  .toggle-bar .item:hover {
+    background: #fffa; }
+
+.container #content .row {
+  padding: 5px;
+  margin: 10px 0;
+  overflow: hidden;
+  color: #fff; }
+  .container #content .row .title, .container #content .row .change, .container #content .row .new {
+    float: right;
+    margin: 0 10px; }
+  .container #content .row .change {
+    color: #0f5;
+    cursor: pointer; }
+  .container #content .row .new {
+    width: 0;
+    height: 30px;
+    overflow: hidden;
+    transition: width 0.2s; }
+    .container #content .row .new input, .container #content .row .new select, .container #content .row .new textarea {
+      width: 75%;
+      height: 100%;
+      float: right;
+      border-radius: 5px; }
+    .container #content .row .new input[type="submit"] {
+      width: 23%;
+      background: #5f09;
+      color: #fff;
+      border: 1px solid #fff; }
+    .container #content .row .new input[type="submit"]:hover {
+      background: #5f0f; }
+    .container #content .row .new input[type="password"] {
+      width: 38%; }
+  .container #content .row img {
+    max-width: 100px;
+    max-height: 100px;
+    float: right; }
+  .container #content .row .follower {
+    width: 250px;
+    display: flex;
+    flex-wrap: nowrap; }
+    .container #content .row .follower select {
+      width: 50%;
+      border-radius: 5px; }
+    .container #content .row .follower input[type="submit"] {
+      width: 30%;
+      background: #5f09;
+      color: #fff;
+      border: 1px solid #fff;
+      border-radius: 5px; }
+
+/* For Bigger Screens */
+@media screen and (min-width: 800px) {
+  .toggle-bar {
+    width: 75%;
+    margin: auto;
+    border-radius: 10px; } }
+
+/*# sourceMappingURL=settings.css.map */

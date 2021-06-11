@@ -1,0 +1,65 @@
+<div class="row">
+    <img src="statics/logo.png">
+    <div class="title">
+        شخص
+    </div>
+    <div class="follower">
+        <select>
+            <option value="follow">متابعة</option>
+            <option value="unfollow">عدم المتابعة</option>
+        </select>
+        <input type="submit" value="حفظ">
+    </div>
+</div>
+<div class="row">
+    <img src="statics/logo.png">
+    <div class="title">
+        شخص
+    </div>
+    <div class="follower">
+        <select>
+            <option value="follow">متابعة</option>
+            <option value="unfollow">عدم المتابعة</option>
+        </select>
+        <input type="submit" value="حفظ">
+    </div>
+</div>
+<div class="row">
+    <img src="statics/logo.png">
+    <div class="title">
+        شخص
+    </div>
+    <div class="follower">
+        <select>
+            <option value="follow">متابعة</option>
+            <option value="unfollow">عدم المتابعة</option>
+        </select>
+        <input type="submit" value="حفظ">
+    </div>
+</div>
+<div class="row">
+    <img src="statics/logo.png">
+    <div class="title">
+        شخص
+    </div>
+    <div class="follower">
+        <select>
+            <option value="follow">متابعة</option>
+            <option value="unfollow">عدم المتابعة</option>
+        </select>
+        <input type="submit" value="حفظ">
+    </div>
+</div>
+<div class="row">
+    <img src="statics/logo.png">
+    <div class="title">
+        شخص
+    </div>
+    <div class="follower">
+        <select>
+            <option value="follow">متابعة</option>
+            <option value="unfollow">عدم المتابعة</option>
+        </select>
+        <input type="submit" value="حفظ">
+    </div>
+</div>

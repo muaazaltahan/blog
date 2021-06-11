@@ -1,0 +1,13 @@
+<input class="input" type="text" placeholder="اسم المستخدم" id="username">
+<input class="input" type="email" placeholder="البريد الإلكتروني" id="email">
+<input class="input" type="password" placeholder="كلمة السر" id="password">
+<input class="input" type="password" placeholder="تأكيد كلمة السر" id="cpassword">
+<input class="input" type="number" placeholder="العمر" id="age">
+<select id="gender">
+    <option>الجنس</option>
+    <option value="male">ذكر</option>
+    <option value="female">أنثى</option>
+    <option value="other">غير ذلك</option>
+</select>
+<textarea placeholder="نبذة قصيرة عنك" id="desc"></textarea>
+<input class="input" type="submit" value="إرسال">

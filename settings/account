@@ -1,0 +1,78 @@
+<div class="row">
+    <div class="title">
+        اسم المستخدم
+    </div>
+    <div class="change" onclick="toggleNew(this,'username')">
+        تغيير
+    </div>
+    <div class="new" id="username">
+        <input type="text" value="معاذ الطحان" placeholder="اسم المستخدم الجديد">
+        <input type="submit" value="حفظ">
+    </div>
+</div>
+<div class="row">
+    <div class="title">
+        العمر
+    </div>
+    <div class="change" onclick="toggleNew(this,'age')">
+        تغيير
+    </div>
+    <div class="new" id="age">
+        <input type="number" value="17" placeholder="العمر الجديد">
+        <input type="submit" value="حفظ">
+    </div>
+</div>
+<div class="row">
+    <div class="title">
+        الجنس
+    </div>
+    <div class="change" onclick="toggleNew(this,'gender')">
+        تغيير
+    </div>
+    <div class="new" id="gender">
+        <select>
+            <option>اختر</option>
+            <option value="male">ذكر</option>
+            <option value="female">أنثى</option>
+            <option value="other">غير ذلك</option>
+        </select>
+        <input type="submit" value="حفظ">
+    </div>
+</div>
+<div class="row">
+    <div class="title">
+        نبذة قصيرة
+    </div>
+    <div class="change" onclick="toggleNew(this,'desc')">
+        تغيير
+    </div>
+    <div class="new" id="desc">
+        <textarea placeholder="نبذة قصيرة عنك">نبذة قصيرة</textarea>
+        <input type="submit" value="حفظ">
+    </div>
+</div>
+<div class="row">
+    <div class="title">
+        البريد الإلكتروني
+    </div>
+    <div class="change" onclick="toggleNew(this,'email')">
+        تغيير
+    </div>
+    <div class="new" id="email">
+        <input type="email" value="almuaaz559@gmail.com" placeholder="البريد الإلكتروني الجديد">
+        <input type="submit" value="حفظ">
+    </div>
+</div>
+<div class="row">
+    <div class="title">
+        كلمة السر
+    </div>
+    <div class="change" onclick="toggleNew(this,'password')">
+        تغيير
+    </div>
+    <div class="new" id="password">
+        <input type="password" placeholder="كلمة السر القديمة">
+        <input type="password" placeholder="كلمة السر الجديدة">
+        <input type="submit" value="حفظ">
+    </div>
+</div>

@@ -1,0 +1,58 @@
+/* This File Is Linked To Register Page */
+.container{
+    padding: 15px;
+    .toggle-bar{ /* Signup & Login */
+        width: 100%;
+        button{
+            width: 50%;
+            height: 30px;
+            padding: 0;
+            text-align: center;
+            float: left;
+            border-radius: 7px;
+            background: #5f08;
+            color: #fff;
+            font-size: 20px;
+            transition: background 0.2s;
+        }
+        button:hover{
+            background: #5f0;
+        }
+    }
+    #content{
+        .input{
+            width: 80%;
+            height: 35px;
+            margin: 10px 10%;
+            border-radius: 7px;
+        }
+        select{
+            width: 100px;
+            height: 35px;
+            margin: 10px 10%;
+        }
+        textarea{
+            width: 80%;
+            height: 50px;
+            margin: 10px 10%;
+            resize: none;
+        }
+        .input[type="submit"]{
+            width: 90%;
+            height: 30px;
+            margin: 10px 5%;
+            background: #8f0;
+            color: #fff;
+            font-size: 20px;
+            border: 1px solid #fff;
+        }
+    }
+}
+
+/* For Bigger Screens */
+@media screen and (min-width: 1200px) {
+    .container #content .input{
+        width: 30%;
+        float: right;    
+    }
+}

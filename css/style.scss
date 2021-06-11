@@ -1,0 +1,245 @@
+/* This File Is Linked To All HTML Files */
+/* Defaults */
+@font-face {
+    font-family: cocon;
+    src: url('../statics/cocon.otf');
+}
+*{
+    font-family: cocon, sans-serif, serif;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('../statics/bg.svg');
+    background-position: center top;
+    margin: 0;
+    padding-top: 50px;
+    height: 100%;
+}
+a{
+    color: #0f5;
+    font-weight: bold;
+    text-decoration: none;
+}
+li{
+    margin: 0;
+    padding: 0;
+}
+input[type="submit"],button{
+    cursor: pointer;
+}
+
+/* Navbar */
+nav{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    height: 50px;
+    background: #0005;
+    z-index: 9;
+    .nav-btn{
+        width: 40px;
+        float: right;
+        cursor: pointer;
+        img{
+            width: 38px;
+            height: 38px;
+            transition: width 0.2s, height 0.2s;
+        }
+        img:hover{
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .nav-btn-side{
+        height: 100%;
+        color: #5f0;
+        text-align: center;
+        font-size: 35px;
+        transition: background 0.2s;
+    }
+    .nav-btn-side:hover{
+        background: #0009;
+    }
+}
+
+/* Sidebar */
+#sidebar{
+    width: 100%;
+    height: 90%;
+    position: fixed;
+    left: 100%;
+    top: 50px;
+    transition: left 0.3s, width 0.3s;
+    background: #730c;
+    color: #fff;
+    overflow: auto;
+    z-index: 9;
+    .follow-us{
+        width: 100%;
+        list-style: none;
+        border-bottom: 1px solid #fff;
+        overflow: hidden;
+        li{
+            display: inline-block;
+            margin-right: 20px;
+            .flw{
+                width: 43px;
+                transition: width 0.2s, height 0.2s;
+            }
+            .flw:hover{
+                width: 46px;
+            }
+        }
+    }
+    .suggested{
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+        span{
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .post{
+            width: 100%;
+            border-bottom: 1px solid #fff;
+            .p-title{
+                font-size: 22px;
+            }
+            .p-image{
+                width: 100%;
+                img{
+                    width: 50%;
+                    margin: auto;
+                    max-height: 100px;
+                }
+            }
+        }
+    }
+}
+
+/* Information & Search */
+.info{
+    width: 100%;
+    background: #5f09;
+    color: #fff;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    box-sizing: content-box;
+    padding: 5px 0;
+    #search{
+        width: 200px;
+    }
+    button{
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        img{
+            width: 35px;
+        }
+    }
+}
+
+.container{
+    margin: 20px auto;
+    background: #0005;
+    text-align: center;
+}
+
+/* Posts */
+.posts{
+    width: 100%;
+    text-align: center;
+    .post{
+        background: #2005;
+        margin: 30px auto;
+        display: grid;
+        width: 100%;
+        color: #fff;
+        grid: 'image image title title title'
+              'image image content content content'
+              'image image content content content'
+              'category category date author author';
+        .p-title{
+            font-size: 22px;
+            grid-area: title;
+        }
+        .p-image{
+            grid-area: image;
+            max-width: 300px;
+            img{
+                width: 100%;
+            }
+        }
+        .p-cont{
+            font-size: 20px;
+            grid-area: content;
+        }
+        .p-category{
+            grid-area: category;
+        }
+        .p-date{
+            grid-area: date;
+        }
+        .p-author{
+            grid-area: author;
+        }
+        .p-category,.p-author,.p-date{
+            font-size: 18px;
+        }
+    }
+}
+
+/* Footer Copyright */
+footer{
+    background: #0005;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    color: #fff;
+    margin-top: 30px;
+}
+
+/* For Bigger Screens */
+@media screen and (min-width: 500px) {
+    #sidebar{
+        width: 50%;
+    }
+    .posts{
+        width: 80%;
+        margin: auto;
+        padding: 5px;
+        .post{
+            border-radius: 10px;
+        }
+    }
+}
+@media screen and (min-width: 800px) {
+    #sidebar{
+        width: 25%;
+    }
+    .posts{
+        width: 90%;
+        overflow: hidden;
+        .post{
+            width: 45%;
+            margin: 30px 5px;
+            float: right;
+        }
+    }
+    .container{
+        width: 75%;
+        overflow: hidden;
+        border-radius: 10px;
+        padding: 5px;
+    }
+}

@@ -1,0 +1,3 @@
+<input class="input" type="email" placeholder="البريد الإلكتروني" id="email">
+<input class="input" type="password" placeholder="كلمة السر" id="password">
+<input class="input" type="submit" value="إرسال">

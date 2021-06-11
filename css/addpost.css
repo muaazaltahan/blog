@@ -1,0 +1,32 @@
+/* This File Is Linked To Add Post Page */
+.container {
+  color: #fff; }
+  .container .title, .container .content {
+    width: 80%;
+    border-radius: 5px;
+    margin: 10px 10%; }
+  .container .title {
+    height: 30px; }
+  .container .content {
+    display: inline-block;
+    height: 100px;
+    resize: none; }
+  .container input[type="submit"] {
+    width: 100%;
+    margin: 10px auto;
+    background: #0f57;
+    transition: background 0.2s;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer; }
+  .container input[type="submit"]:hover {
+    background: #0f5;
+    border-radius: 5px; }
+
+/* font size on bigger screens */
+@media screen and (min-width: 800px) {
+  .container * {
+    font-size: 20px; } }
+
+/*# sourceMappingURL=addpost.css.map */

@@ -1,0 +1,49 @@
+/* This File Is Linked To User & Otheruser Pages */
+.user {
+  margin: 30px auto;
+  text-align: center;
+  font-size: 20px;
+  background: #fff5; }
+  .user .image {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 100px;
+    cursor: pointer; }
+    .user .image img {
+      width: 200px;
+      height: 200px; }
+    .user .image .camera {
+      width: 200px;
+      height: 100px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background: #0005;
+      opacity: 0;
+      transition: opacity 0.2s; }
+      .user .image .camera img {
+        border-radius: 0;
+        width: 100px;
+        height: 60px; }
+  .user .image:hover .camera {
+    opacity: 1; }
+  .user .follow {
+    color: #fff;
+    background: #0f55;
+    transition: background 0.2s;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer; }
+  .user .follow:hover {
+    background: #0f5; }
+
+/* For Bigger Screens */
+@media screen and (min-width: 800px) {
+  .user {
+    width: 70%;
+    border-radius: 10px; } }
+
+/*# sourceMappingURL=user.css.map */

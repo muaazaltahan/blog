@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="مدونتي. مدونة تهتم بالعلوم التقنية وتكنولوجيا المعلومات">
+    <meta name="keywords" content="my,blog,information,technologies,مدونتي,تكنولوجيا,المعلومات,علوم,التقنية,الإعدادات">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/settings.css">
+    <title>مدونتي</title>
+</head>
+<body dir="rtl">
+    <base href="../">
+    <nav>
+        <div class="nav-btn nav-btn-side" onclick="toggleSidebar()">&equiv;</div>
+        <a href="home">
+            <div class="nav-btn">
+                <img src="statics/hm.png" alt="Home">
+            </div>
+        </a>
+        <a href="users/user">
+            <div class="nav-btn">
+                <img src="statics/pn.png" alt="Account">
+            </div>
+        </a>
+        <a href="settings">
+            <div class="nav-btn">
+                <img src="statics/st.png" alt="Settings">
+            </div>
+        </a>
+        <a href="about">
+            <div class="nav-btn">
+                <img src="statics/ab.png" alt="About">
+            </div>
+        </a>
+        <a href="addpost">
+            <div class="nav-btn">
+                <img src="statics/ps.png" alt="Addpost">
+            </div>
+        </a>
+    </nav>
+    <div id="sidebar">
+        <ul class="follow-us">
+            <li>تابعنا على مواقع التواصل</li> <br>
+            <li>
+                <a target="_blank" href="https://www.facebook.com/DeveloperMuaaz/">
+                    <img class="flw" src="statics/fb.png">فيسبوك
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="https://t.me/muaazaltahan">
+                    <img class="flw" src="statics/tel.png">تيليغرام
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.instagram.com/muaaz_al_tahan/">
+                    <img class="flw" src="statics/ins.png">إنستغرام
+                </a>
+            </li>
+        </ul>
+        <div class="suggested">
+            <span>منشورات مقترحة:</span>
+            <a href="posts/post">
+                <div class="post">
+                    <div class="p-title">عنوان المنشور</div>
+                    <div class="p-image">
+                        <img src="statics/logo.png">
+                    </div>
+                </div>
+            </a>
+            <a href="posts/post">
+                <div class="post">
+                    <div class="p-title">عنوان المنشور</div>
+                    <div class="p-image">
+                        <img src="statics/logo.png">
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="toggle-bar">
+        <div class="item" onclick="getContent('settings/account');changeBg(this)" title="الحساب">
+            <img src="statics/pn.png">
+        </div>
+        <div class="item" onclick="getContent('settings/privacy');changeBg(this)" title="الخصوصية">
+            <img src="statics/sec.png">
+        </div>
+        <div class="item" onclick="getContent('settings/following');changeBg(this)" title="المتابعات">
+            <img src="statics/eye.png">
+        </div>
+    </div>
+    <div class="container">
+        <div id="content"></div>
+    </div>
+    <footer dir="ltr">
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">
+            <img alt="Creative Commons License" src="statics/cc.png">
+        </a>
+        <br>
+        This work is licensed under a 
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">
+            Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
+        </a>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/settings.js"></script>
+</body>
+</html>
